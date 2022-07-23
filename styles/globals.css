@@ -1,26 +1,155 @@
-html,
-body {
-  padding: 0;
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  padding: 0;
+}
+
+body {
+  font-family: 'Mulish', sans-serif;
 }
 
 a {
-  color: inherit;
   text-decoration: none;
 }
 
-* {
-  box-sizing: border-box;
+a:hover {
+  color: #fff !important;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+button {
+  border: none;
+
+}
+
+/* navbar start */
+#navbar_main {
+  /* padding: 33px 3px; */
+  background: #ccb1b100;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  z-index: 1;
+}
+
+.main_menu .left {
+  background: #AFEEEE;
+  padding: 20px 40px 10px 40px;
+}
+
+.main_menu .right {
+  padding: 10px 20px 0 0;
+}
+
+.bar {
+  margin-left: 40px;
+}
+
+.menu_link a {
+  display: inline-block;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 33px;
+  color: #fff;
+  padding: 20px 20px 0px 20px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  position: relative;
+  transition: all .5s;
+  text-decoration: none;
+}
+
+.menu_btn_creator {
+  background: #20C6C6;
+  border-radius: 15px;
+  color: #000000 !important;
+  padding: 10px 20px !important;
+}
+
+.menu_link a:hover:after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  background-color: #20C6C6;
+  bottom: -7px;
+  left: 11px;
+  transition: all .5s;
+  text-align: center;
+}
+
+.menu_btn_creator a:hover:after {
+  background-color: transparent !important;
+}
+
+/* banner start */
+.banner__main {
+  padding-bottom: 100px;
+}
+
+.banner_section {
+  position: relative;
+  height: 596px;
+}
+
+.banner__main .carousel-indicators {
+  bottom: -33px;
+}
+
+.banner__main .carousel-indicators button {
+  background: #AFEEEE;
+  border-radius: 25px;
+  width: 18px;
+  height: 18px;
+  border: 0 !important;
+}
+
+.banner__main .carousel-indicators button.active {
+  background: #20C6C6;
+  width: 28px;
+}
+
+.banner_bg img {
+  height: 590px;
+}
+
+.banner_text {
+  width: max-content;
+  display: inline-block;
+  position: absolute;
+  bottom: 100px;
+  right: 70px;
+  text-align: center;
+}
+
+.banner_text h3 {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 42px;
+}
+
+.banner_des p {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  margin-bottom: 10px;
+}
+
+.banner_btn button {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 33px;
+  text-align: center;
+  color: #161622;
+  background: #AFEEEE;
+  border-radius: 20px;
+  padding: 10px 20px;
 }
